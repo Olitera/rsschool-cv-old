@@ -1,27 +1,77 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Resume</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <main> 
-        <article> 
+    <main>  
             <header> 
-                <h1>Olga Melayok</h1>
+                <h1 class = "name">Olga Melayok</h1>
+                <Img src="/Users/Olitera/Documents/GitHub/rsschool-cv/rsschool-cv/src/IMG_8058.JPG" Width="200" Height="150" alt="Avatar">
             </header>
     
-            <p>+375292147127</p>
-            <p>Doctor. 31 years. This is a new experience for me. I do not have work experience. I'm learning fast and having knowledge from an alternative field. I guarantee a non-standard view of the solution
-             </p>
-             <p>Graduated from English Streamline Pre-Intermediate courses</p></p>
+            <section class="contakts">
+                <ul>
+                    <li>+375292147127</li>
+                    <li>lu_gu@mail.ru</li>
+                </ul>
+            </section>
+            
+            <section class ="self">
+              <h4>Doctor. 31 years.</h4>
+              <h4>This is a new experience for me. I do not have work experience.</h4> 
+              <h4>I'm learning fast and having knowledge from an alternative field.</h4> 
+              <h4>I guarantee a non-standard view of the solution</h4>
+            </section>
+
+            <section class = "scylls">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
+            </section>
+
+            <pre><code class="html">
+            <section class = "code">
+                function rgb(r, g, b){
+                    function hexCode(i) {
+                      if (i>255){ 
+                          i = 255}
+                      if (i<0) {
+                          i = 0 }
+                     return i.toString(16).padStart(2,"0").toUpperCase();
+                     }
+                 return  hexCode(r) + hexCode(g) + hexCode(b);  
+                }
+             </section>
+            </code></pre>
     
+            <section class = "courses">
+                <h4>Pre scholl</h4>
+                <div>
+                    <a href="//rolling-scopes-school.github.io/olitera-JSFEPRESCHOOL/js30/" alt = "Vertical slider" ></a>
+                </div>
+            </section>
+
+            <section class = "gratitude">
+                <h4>BSMU 2013</h4>
+            </section>
+
+            <section English>
+                <p>Graduated from English Streamline Pre-Intermediate courses</p>
+            </section>
+            
             <footer> 
                 <a href="https://github.com/Olitera">Ссылка на Гитхабе</a>
               <time datetime="2021">2021</time> 
               <a href="https://rs.school/js/">Ссылка на курс</a>
             </footer>
-        </article>
     </main>
 </body>
 </html>
