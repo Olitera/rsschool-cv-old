@@ -1,3 +1,13 @@
-.name {
-color: brown;    
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+
+.name {
+    color: brown;    
+    }
+
+html {
+    background-color: burlywood;
+}    
