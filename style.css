@@ -1,0 +1,151 @@
+html {
+    background-color: rgb(137, 121, 139);
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.name {
+    color: rgb(80, 30, 1); 
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;   
+    font-style: italic;
+    }
+
+.top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#toggle {
+opacity: 0;
+}
+      
+.button-menu {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.button-menu > span,
+.button-menu > span::before,
+.button-menu > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(83, 48, 116);
+}
+
+.button-menu > span::before {
+  content: '';
+  top: -8px;
+}
+
+.button-menu > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: rgba(122, 133, 121, 0.973);
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color:  rgb(83, 48, 116);
+  }
+
+  .menu__item:hover {
+    background-color: rgba(121, 83, 62, 0.973);
+  }
+
+  #toggle:checked ~ .button-menu > span {
+    transform: rotate(45deg);
+  }
+  #toggle:checked ~ .button-menu > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #toggle:checked ~ .button-menu > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  
+  .button-menu > span,
+  .button-menu > span::before,
+  .button-menu > span::after {
+    transition-duration: .25s;
+  }
+  .menu__box {
+    transition-duration: .25s;
+  }
+  .menu__item {
+    transition-duration: .25s;
+  }
+    
+li {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+.skills-code {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 120px;
+}
+
+.custom {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 40px 120px;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;  
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;  
+}
