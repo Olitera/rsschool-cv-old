@@ -8,61 +8,116 @@
       <script>hljs.initHighlightingOnLoad();</script>
     <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
-    <main>  
-            <header> 
-                <h1 class = "name">Olga Melayok</h1>
-                <Img src="/Users/Olitera/Documents/GitHub/rsschool-cv/rsschool-cv/src/IMG_8058.JPG" Width="200" Height="150" alt="Avatar">
-            </header>
-    
-            <section class="contakts">
-                <ul>
-                    <li>+375292147127</li>
-                    <li>lu_gu@mail.ru</li>
-                </ul>
-            </section>
-            
-            <section class ="self">
-              <h4>Doctor. 31 years.</h4>
-              <h4>This is a new experience for me. I do not have work experience.</h4> 
-              <h4>I'm learning fast and having knowledge from an alternative field.</h4> 
-              <h4>I guarantee a non-standard view of the solution</h4>
-            </section>
+<body> 
+        <header> 
+                <h1 class = "name">Volha Melayok</h1>
+                <div class="hamburger-menu">
+                    <input id="toggle" type="checkbox" />
+                    <label class="button-menu" for="toggle">
+                          <span></span>
+                    </label>
+                        <ul class="menu__box">
+                          <li><a class="menu__item" href="#skills">Skills</a></li>
+                          <li><a class="menu__item" href="#contacts">Contacts</a></li>
+                          <li><a class="menu__item" href="#self">About me</a></li>
+                          <li><a class="menu__item" href="#code">Code</a></li>
+                          <li><a class="menu__item" href="#works">Works</a></li>
+                          <li><a class="menu__item" href="#education">Education</a></li>
+                          <li><a class="menu__item" href="#english">English</a></li>
+                        </ul>
+                </div>     
+        </header>
 
-            <section class = "scylls">
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JS</li>
-                </ul>
+        <main>    
+            <div class = "top">
+                <img class ="avatar" src="src/IMG_8058.JPG" Height="350" alt="Avatar">
+
+                <section class = "skills" id = "skills">
+                    <h4>Skills</h4>
+                    <ul>
+                         <li>HTML</li>
+                         <li>CSS</li>
+                         <li>JavaScript</li>
+                         <li>Git</li>
+                    </ul>
+                </section>
+
+                <section class="contacts" id = "contacts" >
+                    <h4>Contacts</h4>
+                    <ul>
+                         <li>+375292147127</li>
+                         <li>lu_gu@mail.ru</li>
+                    </ul>
+                </section> 
+            </div>   
+    
+            <section class ="self" id = "self">
+              <h4>Some words about me</h4>  
+              <p>Doctor. 31 years.</p>
+              <p>This is a new possibilities for me. I do not have work experience.</p> 
+              <p>I'm learning fast and having knowledge from an alternative field.</p> 
+              <p>I guarantee a non-standard view of the solution</p>
             </section>
 
             <pre><code class="html">
             <section class = "code">
                 
              </section>
-            </code></pre>
     
-            <section class = "courses">
-                <h4>Pre scholl</h4>
-                <div>
-                    <a href="//rolling-scopes-school.github.io/olitera-JSFEPRESCHOOL/js30/" alt = "Vertical slider" ></a>
+            <section class = "works" id = "works">
+                <h4>My projects</h4>
+                <div class="vertical">
+                     <a target ="_blank" href="https://rolling-scopes-school.github.io/olitera-JSFEPRESCHOOL/js30/" ><img src="src/vertical.png" width = "300" alt="Vertical slider"></a>
+                     <p>Looped vertical slider in JavaScript when after the last slide the first one goes next, and when flipping in the opposite direction, after the first slide the last one goes the next one. Implemented scrolling the slider with the mouse wheel</p>
+                     <p>Use HTML, CSS, JS</p>
                 </div>
+                <div class="custom">
+                     <a target ="_blank" href="https://rolling-scopes-school.github.io/olitera-JSFEPRESCHOOL/custom-video-player/"><img src="src/custom.png" width = "300" alt="Custom video player"></a>
+                     <p>A video player that is made in accordance with the designer's intention and the appearance of which does not depend on the browser or device used. Player control from the keyboard</p>
+                     <p>Use HTML, CSS, JS</p>
+                </div>
+
             </section>
 
-            <section class = "gratitude">
-                <h4>BSMU 2013</h4>
+            <section class = "education" id = "education">
+                         <h4>Education and courses</h4>
+                              <p>September 2021 - now JavaScript/Front-end. Rolling Scopes School</p>
+                             <p>July-September 2021 JavaScript/Front-end. Stage 0. Rolling Scopes School</p> 
+                             <p>2007-2013 Belarusian State Medical University</p>
             </section>
 
-            <section English>
-                <p>Graduated from English Streamline Pre-Intermediate courses</p>
+            <section class = "english" id = "english">
+                         <h4>English</h4>
+                             <p>Graduated from English Streamline Pre-Intermediate courses</p>
+                             <p>Epam English test result A2</p>
             </section>
-            
-            <footer> 
-                <a href="https://github.com/Olitera">Ссылка на Гитхабе</a>
-              <time datetime="2021">2021</time> 
-              <a href="https://rs.school/js/">Ссылка на курс</a>
-            </footer>
-    </main>
+
+        </main>  
+
+        <footer> 
+         <a href="https://github.com/Olitera"><img src="src/GitHub-Mark-Light-120px-plus.png" height = "50" alt="logo"></a>
+         <time datetime="2021">2021</time> 
+         <a href="https://rs.school/js/" ><img src="https://rs.school/images/rs_school_js.svg" width = "100" alt="logo"></a> 
+        </footer>
+        <script>console.log("Ваша оценка - 145 баллов. Не выполненные/не засчитанные пункты:1) есть видеорезюме автора CV на английском языке. Видеорезюме встраивается в страницу CV как видео, а не в виде кнопки или ссылки. Продолжительность видео 3-5 минут (±15 секунд). В описание видео на YouTube добавлена ссылка на его транскрипцию на английском языке (например, в документе Google Docs). Частично выполненные пункты:1) дизайн, оформление, качество выполнения CV не ниже чем в примерах CV, приведённых в материалах к заданию Выполненные пункты:1) вёрстка валидная. Проверить валидность вёрстки: https://validator.w3.org/ 2) вёрстка семантическая. В коде страницы присутствуют семантические теги HTML5, например, article, aside, figure, figcaption, footer, header, main, nav, section, используются заголовки h1-h6. 2 балла за каждый уникальный семантический тег HTML5 и за каждый уникальный заголовок h1-h6, но не больше 20 баллов. Заголовок h1 может быть только один 3) для оформления СV используются css-стили. 1 балл за каждый стилизованный элемент, но не больше 10 баллов 4) контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет, если он есть, тянется во всю ширину страницы 5) вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется 6) есть адаптивное бургер-меню. Ссылки в пунктах меню ведут на основные разделы CV. При кликах по пунктам меню реализована плавная прокрутка по якорям. При уменьшении ширины экрана меню становится адаптивным. 7) на странице СV присутствует изображение - фото или аватарка автора CV, пропорции изображения не искажены, у изображения есть атрибут alt (может быть пустым) 8) контакты для связи и перечень навыков оформлены в виде списка ul > li 9) CV содержит контакты, краткую информацию о себе, навыки, образование, уровень английского 10) CV содержит пример вашего кода (например, решение задачи с сайта codewars) с подсветкой кода 11) CV содержит изображения-ссылки на выполненные вами проекты. При клике по изображению страница проекта открывается в новой вкладке. У каждого проекта есть название, небольшое описание, указан перечень используемых технологий 12) CV выполнено на английском языке 13) выполнены требования к репозиторию: есть ссылка на задание, скриншот страницы СV, ссылка на деплой страницы CV на GitHub Pages, указана дата дедлайна, выполнена самооценка (самооценку расписываем по пунктам критериев оценки, указывая балл за каждый пункт)")</script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
