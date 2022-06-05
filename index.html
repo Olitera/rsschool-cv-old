@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Resume</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body> 
         <header> 
@@ -56,19 +59,9 @@
               <p>I guarantee a non-standard view of the solution</p>
             </section>
 
-            <section class = "code" id = "code">
-                <h4>Sample code</h4>
-                <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; background-color: rgb(137, 121, 139); color: rgb(0, 0, 0);">                <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(0, 0, 255);">function</span> <span class="hljs-title" style="color: rgb(163, 21, 21);">rgb</span><span class="hljs-params">(r, g, b)</span></span>{
-                    <span class="hljs-function"><span class="hljs-keyword" style="color: rgb(0, 0, 255);">function</span> <span class="hljs-title" style="color: rgb(163, 21, 21);">hexCode</span><span class="hljs-params">(i)</span> </span>{
-                      <span class="hljs-keyword" style="color: rgb(0, 0, 255);">if</span> (i &gt; <span class="hljs-number">255</span>){ 
-                          i = <span class="hljs-number">255</span>}
-                      <span class="hljs-keyword" style="color: rgb(0, 0, 255);">if</span> (i &lt; <span class="hljs-number">0</span>) {
-                          i = <span class="hljs-number">0</span> }
-                     <span class="hljs-keyword" style="color: rgb(0, 0, 255);">return</span> i.toString(<span class="hljs-number">16</span>).padStart(<span class="hljs-number">2</span>,<span class="hljs-string" style="color: rgb(163, 21, 21);">"0"</span>).toUpperCase();
-                     }
-                 <span class="hljs-keyword" style="color: rgb(0, 0, 255);">return</span>  hexCode(r) + hexCode(g) + hexCode(b);  
-                }
-                </pre>
+            <pre><code class="html">
+            <section class = "code">
+                
              </section>
     
             <section class = "works" id = "works">
